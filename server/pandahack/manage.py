@@ -6,23 +6,23 @@ import ngrok
 
 
 def main():
-    """Added by ngrok"""
-    # This block handles 'make rundjangosite' which uses this manage.py as the entry point.
-    # Set env variable to protect against the autoreloader.
-    if os.getenv("NGROK_LISTENER_RUNNING") is None:
-        os.environ["NGROK_LISTENER_RUNNING"] = "true"
-        import asyncio, multiprocessing, ngrok
+    # """Added by ngrok"""
+    # # This block handles 'make rundjangosite' which uses this manage.py as the entry point.
+    # # Set env variable to protect against the autoreloader.
+    # if os.getenv("NGROK_LISTENER_RUNNING") is None:
+    #     os.environ["NGROK_LISTENER_RUNNING"] = "true"
+    #     import asyncio, multiprocessing, ngrok
 
-        async def setup():
-            listner = ngrok.set_auth_token("2j01HYMsMLCSyR8vheCszZ2osDA_3NG6DceLWiQBjzCbHcs8r")
-            listen = sys.argv[2] if len(sys.argv) > 2 else "localhost:8000"
-            listener = await ngrok.default()
-            print(f"Forwarding to {listen} from ingress url: {listener.url()}")
-            listener.forward(listen)
-            print(f"Ingress established at {listener.url()}")
+    #     async def setup():
+    #         listner = ngrok.set_auth_token("2j01HYMsMLCSyR8vheCszZ2osDA_3NG6DceLWiQBjzCbHcs8r")
+    #         listen = sys.argv[2] if len(sys.argv) > 2 else "localhost:8000"
+    #         listener = await ngrok.default()
+    #         print(f"Forwarding to {listen} from ingress url: {listener.url()}")
+    #         listener.forward(listen)
+    #         print(f"Ingress established at {listener.url()}")
 
-        asyncio.run(setup())
-    """End added by ngrok"""
+    #     asyncio.run(setup())
+    # """End added by ngrok"""
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pandahack.settings')
     try:
