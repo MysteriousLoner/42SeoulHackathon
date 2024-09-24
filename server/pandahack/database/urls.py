@@ -2,8 +2,10 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('totalContributions/', views.total_contributions),
+    path('getRewards/', views.getRewards),
     path('decreaseBambooCount/', views.decreaseBambooCount),
     path('queryBambooCount/', views.queryBambooCount),
     path('receiveOrder/', views.receiveOrder),
+    path('startFlawedDemocracy/', views.startFlawedDemocracy),
+    path('cleardb/', views.aryanRaceGo),
 ]

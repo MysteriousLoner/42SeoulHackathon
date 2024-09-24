@@ -11,7 +11,11 @@ export const useIsMounted = () => {
   return mounted;
 };
 
-export const TITLE = "ABC";
+export const TITLE = "FoodPanda Demo";
+
+export const BASE_PATH = "/42kl-food-app";
+
+export const PINK_COLOR = "#ff2ba5";
 
 export const DATA: FoodCardProps[] = [
   {
