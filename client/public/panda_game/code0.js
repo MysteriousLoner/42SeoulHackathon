@@ -24,150 +24,15 @@ gdjs.Game_32SceneCode.GDLogObjects1= [];
 gdjs.Game_32SceneCode.GDLogObjects2= [];
 
 
-gdjs.Game_32SceneCode.asyncCallback11280076 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Game_32SceneCode.localVariables);
-gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Game_32SceneCode.GDLogObjects2);
-{for(var i = 0, len = gdjs.Game_32SceneCode.GDLogObjects2.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDLogObjects2[i].getBehavior("Text").setText("Bamboo: " + gdjs.evtTools.common.toString(runtimeScene.getScene().getVariables().getFromIndex(3).getAsNumber()));
-}
-}{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.common.toNumber(runtimeScene.getScene().getVariables().getFromIndex(3).getAsString()));
-}gdjs.Game_32SceneCode.localVariables.length = 0;
-}
-gdjs.Game_32SceneCode.eventsList0 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Game_32SceneCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString() + "database/queryBambooCount/", "{\"name\":\"EcoPioneer\"}", "POST", "", runtimeScene.getScene().getVariables().getFromIndex(3), runtimeScene.getScene().getVariables().getFromIndex(5)), (runtimeScene) => (gdjs.Game_32SceneCode.asyncCallback11280076(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.Game_32SceneCode.mapOfGDgdjs_9546Game_959532SceneCode_9546GDPandaObjects1Objects = Hashtable.newFrom({"Panda": gdjs.Game_32SceneCode.GDPandaObjects1});
+gdjs.Game_32SceneCode.mapOfGDgdjs_9546Game_959532SceneCode_9546GDPandaObjects1Objects = Hashtable.newFrom({"Panda": gdjs.Game_32SceneCode.GDPandaObjects1});
 gdjs.Game_32SceneCode.mapOfGDgdjs_9546Game_959532SceneCode_9546GDCollision_95959595sideObjects1Objects = Hashtable.newFrom({"Collision_side": gdjs.Game_32SceneCode.GDCollision_9595sideObjects1});
 gdjs.Game_32SceneCode.mapOfGDgdjs_9546Game_959532SceneCode_9546GDCollision_95959595sideObjects1Objects = Hashtable.newFrom({"Collision_side": gdjs.Game_32SceneCode.GDCollision_9595sideObjects1});
 gdjs.Game_32SceneCode.mapOfGDgdjs_9546Game_959532SceneCode_9546GDPandaObjects1Objects = Hashtable.newFrom({"Panda": gdjs.Game_32SceneCode.GDPandaObjects1});
 gdjs.Game_32SceneCode.mapOfGDgdjs_9546Game_959532SceneCode_9546GDCollision_95959595floorObjects1Objects = Hashtable.newFrom({"Collision_floor": gdjs.Game_32SceneCode.GDCollision_9595floorObjects1});
 gdjs.Game_32SceneCode.mapOfGDgdjs_9546Game_959532SceneCode_9546GDCollision_95959595floorObjects1Objects = Hashtable.newFrom({"Collision_floor": gdjs.Game_32SceneCode.GDCollision_9595floorObjects1});
-gdjs.Game_32SceneCode.asyncCallback11285444 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Game_32SceneCode.localVariables);
-gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Game_32SceneCode.GDLogObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Panda"), gdjs.Game_32SceneCode.GDPandaObjects2);
-{for(var i = 0, len = gdjs.Game_32SceneCode.GDLogObjects2.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDLogObjects2[i].getBehavior("Text").setText("Bamboo: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0))));
-}
-}{for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects2.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDPandaObjects2[i].getBehavior("Animation").setAnimationName("Panda Idle Eat");
-}
-}{for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects2.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDPandaObjects2[i].activateBehavior("TimedBackAndForthMirroredMovement", false);
-}
-}gdjs.Game_32SceneCode.localVariables.length = 0;
-}
-gdjs.Game_32SceneCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Game_32SceneCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString() + "database/decreaseBambooCount/", "{\"name\":\"EcoPioneer\"}", "POST", "", runtimeScene.getScene().getVariables().getFromIndex(6), runtimeScene.getScene().getVariables().getFromIndex(5)), (runtimeScene) => (gdjs.Game_32SceneCode.asyncCallback11285444(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.Game_32SceneCode.asyncCallback11290108 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Game_32SceneCode.localVariables);
-gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Game_32SceneCode.GDLogObjects2);
-{for(var i = 0, len = gdjs.Game_32SceneCode.GDLogObjects2.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDLogObjects2[i].getBehavior("Text").setText("Bamboo: 0");
-}
-}gdjs.Game_32SceneCode.localVariables.length = 0;
-}
-gdjs.Game_32SceneCode.eventsList2 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Game_32SceneCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString() + "database/decreaseBambooCount/", "{\"name\":\"EcoPioneer\"}", "POST", "", runtimeScene.getScene().getVariables().getFromIndex(6), runtimeScene.getScene().getVariables().getFromIndex(5)), (runtimeScene) => (gdjs.Game_32SceneCode.asyncCallback11290108(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.Game_32SceneCode.mapOfGDgdjs_9546Game_959532SceneCode_9546GDFEED_95959595BUTTON_959595952Objects1Objects = Hashtable.newFrom({"FEED_BUTTON_2": gdjs.Game_32SceneCode.GDFEED_9595BUTTON_95952Objects1});
+gdjs.Game_32SceneCode.mapOfGDgdjs_9546Game_959532SceneCode_9546GDFEED_95959595BUTTON_959595952Objects1Objects = Hashtable.newFrom({"FEED_BUTTON_2": gdjs.Game_32SceneCode.GDFEED_9595BUTTON_95952Objects1});
 gdjs.Game_32SceneCode.mapOfGDgdjs_9546Game_959532SceneCode_9546GDFEED_95959595BUTTONObjects1Objects = Hashtable.newFrom({"FEED_BUTTON": gdjs.Game_32SceneCode.GDFEED_9595BUTTONObjects1});
-gdjs.Game_32SceneCode.asyncCallback11297548 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Game_32SceneCode.localVariables);
-gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Game_32SceneCode.GDLogObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Panda"), gdjs.Game_32SceneCode.GDPandaObjects2);
-{for(var i = 0, len = gdjs.Game_32SceneCode.GDLogObjects2.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDLogObjects2[i].getBehavior("Text").setText("Bamboo: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0))));
-}
-}{for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects2.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDPandaObjects2[i].getBehavior("Animation").setAnimationName("Panda Songkok Idle Eat");
-}
-}{for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects2.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDPandaObjects2[i].activateBehavior("TimedBackAndForthMirroredMovement", false);
-}
-}gdjs.Game_32SceneCode.localVariables.length = 0;
-}
-gdjs.Game_32SceneCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Game_32SceneCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString() + "database/decreaseBambooCount/", "{\"name\":\"EcoPioneer\"}", "POST", "", runtimeScene.getScene().getVariables().getFromIndex(6), runtimeScene.getScene().getVariables().getFromIndex(5)), (runtimeScene) => (gdjs.Game_32SceneCode.asyncCallback11297548(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.Game_32SceneCode.asyncCallback11301668 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Game_32SceneCode.localVariables);
-gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Game_32SceneCode.GDLogObjects2);
-{for(var i = 0, len = gdjs.Game_32SceneCode.GDLogObjects2.length ;i < len;++i) {
-    gdjs.Game_32SceneCode.GDLogObjects2[i].getBehavior("Text").setText("Bamboo: 0");
-}
-}gdjs.Game_32SceneCode.localVariables.length = 0;
-}
-gdjs.Game_32SceneCode.eventsList4 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Game_32SceneCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString() + "database/decreaseBambooCount/", "{\"name\":\"EcoPioneer\"}", "POST", "", runtimeScene.getScene().getVariables().getFromIndex(6), runtimeScene.getScene().getVariables().getFromIndex(5)), (runtimeScene) => (gdjs.Game_32SceneCode.asyncCallback11301668(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.Game_32SceneCode.eventsList5 = function(runtimeScene) {
+gdjs.Game_32SceneCode.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -179,6 +44,7 @@ if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("FEED_BUTTON_2"), gdjs.Game_32SceneCode.GDFEED_9595BUTTON_95952Objects1);
 gdjs.copyArray(runtimeScene.getObjects("Inventory_Border"), gdjs.Game_32SceneCode.GDInventory_9595BorderObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Inventory_border_2"), gdjs.Game_32SceneCode.GDInventory_9595border_95952Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Game_32SceneCode.GDLogObjects1);
 {for(var i = 0, len = gdjs.Game_32SceneCode.GDInventory_9595BorderObjects1.length ;i < len;++i) {
     gdjs.Game_32SceneCode.GDInventory_9595BorderObjects1[i].hide();
 }
@@ -188,10 +54,10 @@ gdjs.copyArray(runtimeScene.getObjects("Inventory_border_2"), gdjs.Game_32SceneC
 }{for(var i = 0, len = gdjs.Game_32SceneCode.GDFEED_9595BUTTON_95952Objects1.length ;i < len;++i) {
     gdjs.Game_32SceneCode.GDFEED_9595BUTTON_95952Objects1[i].deleteFromScene(runtimeScene);
 }
+}{for(var i = 0, len = gdjs.Game_32SceneCode.GDLogObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDLogObjects1[i].getBehavior("Text").setText("Bamboo: " + runtimeScene.getGame().getVariables().getFromIndex(0).getAsString());
 }
-{ //Subevents
-gdjs.Game_32SceneCode.eventsList0(runtimeScene);} //End of subevents
-}
+}}
 
 }
 
@@ -296,11 +162,19 @@ for (var i = 0, k = 0, l = gdjs.Game_32SceneCode.GDFEED_9595BUTTONObjects1.lengt
 gdjs.Game_32SceneCode.GDFEED_9595BUTTONObjects1.length = k;
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Game_32SceneCode.GDLogObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Panda"), gdjs.Game_32SceneCode.GDPandaObjects1);
 {runtimeScene.getGame().getVariables().getFromIndex(0).add(-(1));
+}{for(var i = 0, len = gdjs.Game_32SceneCode.GDLogObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDLogObjects1[i].getBehavior("Text").setText("Bamboo: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0))));
 }
-{ //Subevents
-gdjs.Game_32SceneCode.eventsList1(runtimeScene);} //End of subevents
+}{for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDPandaObjects1[i].getBehavior("Animation").setAnimationName("Panda Idle Eat");
 }
+}{for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDPandaObjects1[i].activateBehavior("TimedBackAndForthMirroredMovement", false);
+}
+}}
 
 }
 
@@ -384,6 +258,7 @@ for (var i = 0, k = 0, l = gdjs.Game_32SceneCode.GDFEED_9595BUTTONObjects1.lengt
 gdjs.Game_32SceneCode.GDFEED_9595BUTTONObjects1.length = k;
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Game_32SceneCode.GDLogObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Panda"), gdjs.Game_32SceneCode.GDPandaObjects1);
 {for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects1.length ;i < len;++i) {
     gdjs.Game_32SceneCode.GDPandaObjects1[i].getBehavior("Animation").setAnimationName("Panda Jump Fall");
@@ -391,10 +266,10 @@ gdjs.copyArray(runtimeScene.getObjects("Panda"), gdjs.Game_32SceneCode.GDPandaOb
 }{for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects1.length ;i < len;++i) {
     gdjs.Game_32SceneCode.GDPandaObjects1[i].activateBehavior("TimedBackAndForthMirroredMovement", false);
 }
+}{for(var i = 0, len = gdjs.Game_32SceneCode.GDLogObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDLogObjects1[i].getBehavior("Text").setText("Bamboo: 0");
 }
-{ //Subevents
-gdjs.Game_32SceneCode.eventsList2(runtimeScene);} //End of subevents
-}
+}}
 
 }
 
@@ -581,11 +456,19 @@ for (var i = 0, k = 0, l = gdjs.Game_32SceneCode.GDFEED_9595BUTTON_95952Objects1
 gdjs.Game_32SceneCode.GDFEED_9595BUTTON_95952Objects1.length = k;
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Game_32SceneCode.GDLogObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Panda"), gdjs.Game_32SceneCode.GDPandaObjects1);
 {runtimeScene.getGame().getVariables().getFromIndex(0).add(-(1));
+}{for(var i = 0, len = gdjs.Game_32SceneCode.GDLogObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDLogObjects1[i].getBehavior("Text").setText("Bamboo: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0))));
 }
-{ //Subevents
-gdjs.Game_32SceneCode.eventsList3(runtimeScene);} //End of subevents
+}{for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDPandaObjects1[i].getBehavior("Animation").setAnimationName("Panda Songkok Idle Eat");
 }
+}{for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDPandaObjects1[i].activateBehavior("TimedBackAndForthMirroredMovement", false);
+}
+}}
 
 }
 
@@ -652,6 +535,7 @@ for (var i = 0, k = 0, l = gdjs.Game_32SceneCode.GDFEED_9595BUTTON_95952Objects1
 gdjs.Game_32SceneCode.GDFEED_9595BUTTON_95952Objects1.length = k;
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Log"), gdjs.Game_32SceneCode.GDLogObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Panda"), gdjs.Game_32SceneCode.GDPandaObjects1);
 {for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects1.length ;i < len;++i) {
     gdjs.Game_32SceneCode.GDPandaObjects1[i].getBehavior("Animation").setAnimationName("Panda Songkok Jump Fall");
@@ -659,10 +543,10 @@ gdjs.copyArray(runtimeScene.getObjects("Panda"), gdjs.Game_32SceneCode.GDPandaOb
 }{for(var i = 0, len = gdjs.Game_32SceneCode.GDPandaObjects1.length ;i < len;++i) {
     gdjs.Game_32SceneCode.GDPandaObjects1[i].activateBehavior("TimedBackAndForthMirroredMovement", false);
 }
+}{for(var i = 0, len = gdjs.Game_32SceneCode.GDLogObjects1.length ;i < len;++i) {
+    gdjs.Game_32SceneCode.GDLogObjects1[i].getBehavior("Text").setText("Bamboo: 0");
 }
-{ //Subevents
-gdjs.Game_32SceneCode.eventsList4(runtimeScene);} //End of subevents
-}
+}}
 
 }
 
@@ -738,7 +622,7 @@ gdjs.Game_32SceneCode.GDInventory_9595border_95952Objects2.length = 0;
 gdjs.Game_32SceneCode.GDLogObjects1.length = 0;
 gdjs.Game_32SceneCode.GDLogObjects2.length = 0;
 
-gdjs.Game_32SceneCode.eventsList5(runtimeScene);
+gdjs.Game_32SceneCode.eventsList0(runtimeScene);
 gdjs.Game_32SceneCode.GDBackgroundColourObjects1.length = 0;
 gdjs.Game_32SceneCode.GDBackgroundColourObjects2.length = 0;
 gdjs.Game_32SceneCode.GDFEED_9595BUTTONObjects1.length = 0;
